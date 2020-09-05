@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Breaking Hearts</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <div id="size-error">
+      <h1>Window Too Small</h1>
+      <h2>Please resize window to be larger than 1060x680</h2>
+    </div>
+    <div id="tutorial" class="cover">
+      <div id="tutorial-help" class="arrow arrow-right">Help</div>
+      <div id="tutorial-top" class="arrow arrow-right">Top Slide</div>
+      <div id="tutorial-bottom" class="arrow arrow-left">Bottom Slide</div>
+      <div id="tutorial-main" class="cover-popup">
+        <h4>Breaking Hearts</h4>
+        <p>
+          Scroll to progress the story. When you scroll down, the top panel will advance in chronological order from the perspective of the female and the bottom will move in reverse chronological order from the perspective of the male. The bottom panels
+          should be read in reverse, the first slide is the last scene of the story. Hover over the help button for more information about each slide.
+          <ul>
+            <li>
+              <span>Help:</span>
+              Hover to see more information about the slides
+            </li>
+            <li>
+              <span>Top Panel:</span>
+              Shows the story in chronological order
+            </li>
+            <li>
+              <span>Bottom Panel:</span>
+              Shows the story in reverse chronological order
+            </li>
+          </ul>
+          <button id="tutorial-confirm" type="button" class="confirm">Confirm</button>
+        </div>
+      </div>
+      <div id="reverse" class="cover">
+        <div class="cover-popup">
+          <p>
+            View in reverse order so that you can see the story from the man's POV in chronological order for better comprehension.
+          </p>
+          <button id="reverse-confirm" type="button" class="confirm">Reverse</button>
+          <button id="reverse-cancel" type="button" class="confirm">Cancel</button>
+        </div>
+      </div>
+      <div id="header">
+        <span id="help">?</span>
+      </div>
+      <div id="comic-view">
+        <div>
+          <h1 id="comic-top-help-header" class="help"></h1>
+          <p id="comic-top-help" class="help"></p>
+        </div>
+        <div id="comic-top" class="comic-container"></div>
+        <div id="comic-bottom" class="comic-container"></div>
+        <div>
+          <h1 id="comic-bottom-help-header" class="help"></h1>
+          <p id="comic-bottom-help" class="help"></p>
+        </div>
+      </div>
+    </body>
+    <!-- <script src="js/clock.js"></script> -->
+    <script src="js/comic.js"></script>
+  </html>

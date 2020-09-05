@@ -1,0 +1,296 @@
+@font-face {
+  font-family: Apercu;
+  src: url("../font/Apercu Bold.otf");
+}
+
+* {
+	font-family: Apercu, Arial;
+	margin: 0;
+	cursor: url("../about/boat3.png") 10 10,auto;
+}
+
+html, body { height: 100%; }
+body {
+  background-color:#ffffff;
+  transition: background-color 1s ease;
+  overflow: hidden;
+}
+
+/* #right-half {
+	position: absolute;
+	left:50%;
+	width:50vw;
+	height:100vh;
+	background: blue;
+}
+
+#left-half {
+	position: absolute;
+	width:50vw;
+	height:100vh;
+} */
+
+#title{
+	position:absolute;
+	/* top:47%; */
+	top:24%;
+	left:3%;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.vertical-text {
+	transform: rotate(-90deg) translate(-50%,0%);
+	transform-origin: left top 0;
+	float: left;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+  border-right: none;
+  border-left: 105px solid rgba(253,251,251,1);
+}
+
+.about-text {
+	position: absolute;
+	top:3%;
+	right:3%;
+	font-size: 170%;
+}
+
+#play-button {
+	position: absolute;
+	left:41%;
+	top: 34%;
+	z-index: 5;
+	opacity: .7;
+	background: transparent;
+}
+
+#play-button:focus,
+#pause-button:focus,
+#restart-button:focus{
+	outline:none;
+}
+
+#play-button:hover,
+#pause-button:hover,
+#restart-button:hover{
+	opacity:1;
+}
+
+#pause-button {
+	position: absolute;
+	display:none;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	width: 26%;
+	height: 30%;
+	z-index:5;
+	border: none;
+	background: transparent;
+	opacity: .7;
+}
+/* #pause-button:focus{
+	outline:none;
+}
+
+#pause-button:hover{
+	opacity: 1;
+} */
+
+#left-rect,
+#right-rect {
+	position: absolute;
+	top:0%;
+	width:35%;
+	height:100%;
+	background: white;
+}
+#left-rect{
+	left:0%;
+}
+#right-rect {
+	left:65%;
+}
+
+#restart-button {
+	position: absolute;
+	display: none;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	width: 33%;
+	height: 30%;
+	z-index:5;
+	border: none;
+	background: transparent;
+	opacity: .7;
+}
+
+#restart-img {
+	margin:0;
+	width:100%;
+	height:100%;
+}
+
+/* #play-button {
+	position: absolute;
+	top:50%;
+	left:32%;
+	transform: translate(-50%,-50%);
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	opacity:0;
+} */
+
+.circle {
+	margin-top: .5%;
+	position: absolute;
+	top:45%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:450px;
+	height:450px;
+	border: 5px solid #fff;
+	box-shadow: 0 0 0 5px rgb(0,120,215);
+	border-radius: 50%;
+	background: rgb(0,120,215);
+	overflow: hidden;
+}
+
+.wave {
+	position: relative;
+	width:100%;
+	height: 100%;
+	background: rgb(0,120,215);
+	border-radius: 50%;
+	box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+}
+.wave:before,
+.wave:after {
+	content:'';
+	position:absolute;
+	width:200%;
+	height:200%;
+	top: 0;
+	left:50%;
+	transform: translate(-50%,-75%);
+	/* background: white; */
+	background:#e7eff6;
+}
+
+.wave:before {
+	border-radius: 45%;
+	opacity: 1;
+	animation: animate 10s linear infinite;
+}
+
+.wave:after {
+	border-radius: 40%;
+	opacity: 0.5;
+	animation: animate 7s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		transform:translate(-50%,-75%) rotate(0deg);
+	}
+	100%{
+		transform:translate(-50%,-75%) rotate(360deg);
+	}
+}
+
+.text-container {
+	position: absolute;
+	left: 35%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	line-height: 140%;
+	font-size: 400%;
+	width:100%;
+	text-align: center;
+}
+
+/* #instruction-text {
+	position: relative;
+	text-align: center;
+} */
+
+#deco-box {
+	background: #d3eeff;
+	position: absolute;
+	left: 9%;
+	top: 19%;
+	width: 320px;
+	height: 260px;
+	z-index: 1;
+}
+
+.svg-box {
+	position:absolute;
+}
+
+#left-top-diagonal {
+	left:18%;
+	top:17%;
+}
+
+#right-bottom-diagonal {
+	left:75%;
+	top:70%;
+}
+
+/* #name-text {
+	position: absolute;
+	top:90%;
+	left:3%;
+	font-size: 150%;
+} */
+
+.range-bar-container {
+	width:30%;
+	height:20px;
+	position:absolute;
+	top: 90%;
+	left: 50%;
+	transform:translate(-50%,0%);
+}
+
+.slider {
+	width:100%;
+	height: 12px;
+	-webkit-appearance: none;
+	border-radius: 10px;
+	background-color: rgb(0,120,215);
+	/* box-shadow: inset 0 3px 18px rgba(0,0,0,.1); */
+}
+
+.slider:focus {
+	outline:none;
+}
+
+.slider::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width: 25px;
+	height:25px;
+	box-shadow: inset 0 7px 7px rgba(0,0,0,.1);
+	border-radius:50%;
+	background:white;
+	padding: 15px;
+	/* cursor:pointer; */
+}
+
+a:-webkit-any-link {
+    color: black;
+
+    cursor: pointer;
+    text-decoration:none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}

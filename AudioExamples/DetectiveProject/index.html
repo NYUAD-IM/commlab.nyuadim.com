@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title> The Bonnie Suicide</title>
+	<link rel="stylesheet" href = "./css/style.css">
+
+
+</head>
+
+<body>
+
+
+	<!-- Home Page with instructions -->
+
+	<div class = "pimg1">
+
+		<div class = "ptext">
+			<span class = "border">
+				The Bonnie Gull Suicide
+			</span>
+		</div>
+
+		<div class ="start">
+			Click Play to start
+		</div>
+
+		<div class = "audio">
+			<audio controls id = "player">
+			<source src ="audio/welcome.mp3" type = "audio/mp3">
+			</audio>
+<!-- 			<button id = "startButton">Play </button>
+			<button id = "pauseButton">Pause</button>
+			<button id = "stopButton"> Stop </button> -->
+		</div>
+
+		<div class = "scrolldown">
+			<img src = "scrolldown4.png">
+
+
+		</div>
+
+	</div>
+
+
+
+
+	<!-- Section 1 with instructions -->
+
+	<section class = "section-dark">
+
+		<h2></h2>
+		<p></p>
+		
+
+	</section>
+
+	<!-- Second image with the 911 audio -->
+
+	<div class = "pimg2">
+
+
+		<div class = "ptext">
+			<span class = "border">
+				911 Police Call
+			</span>
+		</div>
+
+		<div class = "audio">
+			<audio controls id = "player">
+			<source src ="audio/policecall.mp3" type = "audio/mp3">
+			</audio>
+<!-- 			<button id = "startButton">Play </button>
+			<button id = "pauseButton">Pause</button>
+			<button id = "stopButton"> Stop </button> -->
+
+		</div>
+		<div class = "scrolldown">
+			<img src = "scrolldown4.png">
+
+
+		</div>
+
+			
+		
+
+	</div>
+
+	<!-- Second instruction with hints -->
+
+	<section class = "section-dark">
+
+		<h2></h2>
+		<p></p>
+
+	</section>
+
+	<!-- Third image with News interview audio -->
+
+	<div class = "pimg3">
+		<div class = "ptext">
+			<span class = "border">
+				Breaking News
+			</span>
+		</div>
+		<div class = "audio">
+			<audio controls id = "player">
+			<source src ="audio/newsreport.wav" type = "audio/wav">
+			</audio>
+<!-- 			<button id = "startButton">Play </button>
+			<button id = "pauseButton">Pause</button>
+			<button id = "stopButton"> Stop </button> -->
+		</div>
+		<div class = "scrolldown">
+			<img src = "scrolldown4.png">
+
+
+		</div>
+	</div>
+
+	<!-- instruction to type the solution to the mystery -->
+	<section class = "section-darkt">
+
+		<h2></h2>
+		<p></p>
+
+	</section>
+
+
+		<div class = "pimg35">
+		<div class = "ptext">
+			<span class = "border">
+				Witness Interview
+			</span>
+		</div>
+		<div class = "audio">
+			<audio controls id = "player">
+			<source src ="audio/interview.wav" type = "audio/wav">
+			</audio>
+<!-- 			<button id = "startButton">Play </button>
+			<button id = "pauseButton">Pause</button>
+			<button id = "stopButton"> Stop </button> -->
+		</div>
+		<div class = "scrolldown">
+			<img src = "scrolldown4.png">
+
+
+		</div>
+	</div>
+
+	<!-- instruction to type the solution to the mystery -->
+	<section class = "section-darkt">
+
+		<h2></h2>
+		<p></p>
+
+	</section>
+
+	
+
+
+
+	<!-- Text Box to submit answer --> 
+
+	<div class = "pimg4">
+		<div class = "ptext">
+			<span class = "border">
+				Family Member Interview
+			</span>
+		</div>
+		<div class = "audio">
+			<audio controls id = "player">
+			<source src ="audio/familymember.mp3" type = "audio/mp3">
+			</audio>
+<!-- 			<button id = "startButton">Play </button>
+			<button id = "pauseButton">Pause</button>
+			<button id = "stopButton"> Stop </button> -->
+		</div>
+		<div class = "scrolldown">
+			<img src = "scrolldown4.png">
+
+
+		</div>
+
+	</div>
+
+	<section class = "section-darkt">
+
+		<h2></h2>
+		<p></p>
+
+	</section>
+
+<!-- Text to submit the hypothesis -->
+	<div class = "pimg5">
+		<div class = "ptext">
+			<span class = "border" id = "mystery">
+				Solve the Mystery
+			</span>
+		</div>
+
+
+
+		<div class = textbox>
+			<textarea id = "text" rows="13" cols="73"> Enter your theories</textarea>
+			<br>
+			<button  id = "submit"> Submit </button>
+
+		</div>
+
+
+
+
+
+
+
+		<div class = "scrolldown">
+			<img src = "scrolldown4.png">
+
+
+		</div>
+
+	</div>
+
+	<section class = "section-darkt" id = "solution">
+
+		<h2>Case Solved</h2>
+		<p>
+ 			A while ago, when the old blind man suffered the ship accident, the lifeboat crew  wrecked along to  a desert island. There, before starving, the survivors gave him gull to eat. When he tasted the gull in the restaurant, he noticed a huge difference in taste with the gull  they gave him in the shipwreck. So, he remembered that his wife  had been the only that did not make it alive and he ate that "gull" just a few hours after she died. Hence, he realized it was not seagull what he ate in the island, but his wife.
+ 		</p>
+
+	</section>
+
+	<script type = "text/javascript">
+		var mystery = document.getElementById("mystery");
+		var text = document.getElementById("text");
+		var submit = document.getElementById("submit");
+		var solution = document.getElementById("solution");
+
+		submit.addEventListener("click",showSolution);
+
+		
+		function showSolution(){
+
+			text.style.display = "none";
+			submit.style.display = "none";
+			mystery.innerHTML = "Thanks! Check down for the solution";
+			solution.style.display = "block";
+		}
+
+	</script>
+</body>
+
+</html> 
+

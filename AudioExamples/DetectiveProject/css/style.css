@@ -1,0 +1,246 @@
+body, html, .start{
+	height:100%;
+	margin: 0;
+	font-size:16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height:1.8em;
+	color:#666;
+}
+
+
+.pimg1, .pimg2, .pimg3, .pimg35, .pimg4, .pimg5{
+position:relative;
+opacity:0,70;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment:fixed;
+}
+
+
+
+.pimg1{
+	background-image: url("Leo4.jpg");
+	min-height:100%;
+}
+
+.pimg2{
+	background-image: url("Leo2.jpg");
+	min-height:100%;
+}
+
+.pimg3{
+	background-image: url("Leo3.jpg");
+	min-height:100%;
+}
+
+.pimg35{
+	background-image: url("Leo1.jpg");
+	min-height:100%;
+}
+
+
+.pimg4{
+	background-image: url("Leo5.jpg");
+	min-height:100%;
+}
+
+.pimg5{
+	background-image: url("Leo6.jpg");
+	min-height:100%;
+}
+
+section{
+	text-align:center;
+	padding: 40px 70px ;
+	/*background-color:#282e34;*/
+	background-color:#111;
+	color:#ddd;
+}
+
+.ptext{
+	position:absolute;
+	top:50%;
+	width:100%;
+	text-align:center;
+	color:#000;
+	font-size:35px;
+	letter-spacing: 8px;
+	text-transform:uppercase;
+}
+
+.ptext .border{
+	background-color:#111;
+	color:#fff;
+	padding:20px;
+
+}
+
+.audio{
+	position: absolute;
+	top: 70%;
+	left:40%;
+
+}
+
+.scrolldown{
+position: absolute;
+top: 94%;
+left: 95%;
+height:10%;
+width:10%;
+font-size:14px;
+background:transparent;
+
+
+
+}
+
+.scrolldown img{
+position:relative;
+height:50%;
+width:37.5%;
+
+}
+
+.textbox{
+	position: absolute;
+	top: 60%;
+	left:34%;
+
+}
+
+.start{
+	position:absolute;
+	top:65%;
+	left:42%;
+	background-color: transparent;
+	color: white;
+	font-size:20px;
+	letter-spacing: 4px;
+
+
+
+}
+
+
+#solution{
+	display:none;
+}
+
+#submit{
+	
+}
+
+
+
+
+
+/*#main {
+	width:25%;
+	background-color:#fff;
+	border-radius:15px;
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+
+}
+
+#audio_image img{
+	height: 180px
+	width:100%;
+	margin-top: : -5px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+#player{
+	padding:25px;
+	color:#333;
+}
+
+#songTitle{
+	width: 300px;
+	text-align:center;
+
+	font-family:monospace;
+	font-size:18px;
+	position:absolute;
+	top:60%;
+	left:50%;
+	transform:  translate(-50%,-50%);
+}
+
+#buttons{
+	height: 50px;
+	width:100%;
+	margin-top:50px;
+	position:relative;
+	top:10%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+
+#play{
+	width:50px;
+	height:50px;
+	border: 0;
+	background-color: royalblue;
+	border-radius:50%;
+	outline: none;
+	cursor:pointer;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+#play img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+
+#seek-bar {
+	width: 250px;
+	height: 5px;
+	background-color:gray;
+	display: flex;
+	border-radius: 50px;
+	margin-left:25px;
+	cursor: pointer;
+}
+
+
+#fill{
+	height:5px;
+	background-color:royalblue;
+	border-radius:20px;
+
+}
+
+#handle{
+	width: 8px;
+	height;
+	background-color:royalblue;
+	border-radius:50%;
+	margin-left:-5px;
+	transform:scale(2);
+}
+
+
+
+
+
+
+
+
+
+
+*/

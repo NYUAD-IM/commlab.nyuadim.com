@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<title>Audio Preload</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	
+</head>
+
+<body>
+
+	<div class="pageTitle">The Long Historical Recording</div>
+	<!-- audio to load -->
+	<audio id="audio" preload="auto">
+		<source src="audio/KitchenDebate.mp3" type="audio/mp3">
+			Your browser does not support audio.
+	</audio>
+
+	<!-- text with update -->
+	<div class="info-holder">
+		<div class="description" id="info">Loading Audio...</div>
+	</div>
+
+	<!-- buttons for controller -->
+	<div class="button-holder">
+		<div class="button" id="playButton">play</div>
+		<div class="button" id="pauseButton">pause</div>
+		<div class="button" id="stopButton">stop</div>
+		
+	</div>
+
+
+	<script src="js/script.js"> </script>
+	
+
+
+
+</body>
+
+</html>

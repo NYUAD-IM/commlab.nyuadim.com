@@ -1,0 +1,99 @@
+body{
+	background-color: #190C41;
+	background-image: ;
+	color: white;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+.text{	
+	font-size: 520%;
+	letter-spacing: -2px;
+	margin-top: 2%;
+	margin-left: 14%;
+	font-weight: 700;
+	padding: 0;
+}
+
+img{
+	width: 17%;
+	height:17%;
+	margin-left: 43%;
+}
+
+.button{
+	color: #190C41;
+	padding: 10px 20px;
+	margin: 10px 10px;
+	cursor: pointer;
+	border: 2px white;
+	border-radius: 3px;
+	font-size: 150%;
+	font-family: 'Yantramanav', sans-serif;
+}
+
+.button:hover{
+	background-color:white;
+	border: 2px white;
+	color: #190C41;
+}
+
+
+.progress {
+  width: 1px;
+  height: 10px;
+  background: white;
+  transition: width .1s linear;
+}
+
+
+
+/*Play/pause button*/
+.container {
+  width: 80%;
+/*  background: #190C41;*/
+  margin-left: 11.35%;
+  text-align: center;
+  padding-bottom: 0px;
+
+
+}
+
+.togglePlay {
+  font: 0/0 a;
+  background: transparent;
+  color: #190C41;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 0;
+  width: 64px;
+  height: 64px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 150ms ease-out;
+}
+.togglePlay:after {
+  box-sizing: border-box;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  border-color: transparent;
+  border-style: solid;
+  border-top-width: 16px;
+  border-bottom-width: 16px;
+  border-left-width: 19px;
+  border-left-color: white;
+}
+.togglePlay:hover {
+  transform: scale(1.05);
+}
+.togglePlay.active:after {
+  width: 21px;
+  height: 26px;
+  margin-left: 0;
+  border-width: 0 7px;
+  border-color: rgba(255, 255, 255, 0.9);
+}

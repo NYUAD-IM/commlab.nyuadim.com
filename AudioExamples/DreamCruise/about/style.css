@@ -1,0 +1,68 @@
+@font-face {
+	font-family: Apercu;
+	src: url("../font/Apercu Bold.otf");
+  }
+* {
+	font-family: Apercu, Arial;
+}
+body{
+	cursor: url(boat3.png) 25 25,auto;
+	margin:0px;
+}
+
+.intro{
+	justify-content: center;
+	text-align: left;
+	display: inline-block;
+	font-size: 150%;
+	width:44%;
+	padding-left:3%;
+	padding-right: 3%;
+	height:100vh;
+	padding-top: 1.5%;
+	padding-left: 0%
+	line-height: 200%;
+}
+
+
+.credits{
+	justify-content: center;
+	display: inline-block;
+	text-align: left;
+	font-size: 130%;
+	width:40%;
+	height:100vh;
+	left:50%;
+	background-color:#0078D7;
+	padding-top: 2%;
+	padding-left: 10%;
+	line-height: 80%;
+	position:absolute;
+	color:white;
+}
+
+.home{
+	justify-content: center;
+	display: inline-block;
+	text-align: left;
+	font-size: 130%;
+	width:7%;
+	height:3vh;
+	left:91%;
+	top:1.7%;
+	padding-top:1.5%; 
+	padding-left: 0%;
+	line-height: 80%;
+	position:absolute;
+	color:white;
+
+}
+a:-webkit-any-link{
+	color:white;
+	cursor: pointer;
+	font-size: 130%;
+
+	text-decoration: none;
+	text-decoration-style: initial;
+	text-decoration-color: initial;
+}

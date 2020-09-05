@@ -1,0 +1,305 @@
+/**{
+	margin: 0;
+	padding: 0;
+}*/
+
+/*html {
+  background: url(../media/IM.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+body{
+	width: 80%;
+	margin: 0 auto;
+	font-family: Futura,Arial;
+	font-weight: lighter;
+	color:rgb(80,80,80);
+	background-color: white;
+}
+a{
+	text-decoration: none;
+	color: rgb(80,80,80);
+	width: 100%;
+	height: 100%;
+}
+.no-style{
+	text-decoration: none;
+}
+.lesson-topic{
+	font-size: 1.2em;
+	margin-top: 24px;
+	margin-bottom: 8px;
+	margin-left: -20px;
+
+	font-weight: bold;
+	color: black;
+}
+
+.homework{
+	font-weight: bold;
+	background-color: rgb(80, 80, 80);
+	color: white;
+	padding: 0px 2px 0px 2px;
+	font-size: 1em;
+}
+
+a:active{
+	color: purple;
+}
+ul{
+	margin-top: 2px;
+}
+li{
+	margin: 3px;
+}
+.small-bottom-margin{
+	margin-bottom: 2px;
+}
+.mainNav{
+	background-color: rgb(255,255,255);
+	position: fixed;
+	top: 0px;
+	width: 80%;
+	padding: 10px 0;
+	line-height: 36px;
+}
+
+.mainNav-item, .unfoldingNav{
+	width: 23%;	/*for five tabs*/
+	/*width: 23%;*/  /*for four tabs*/
+	max-width: 23%;
+	margin-left: 1%;
+	margin-right: 1%;
+	float: left;
+
+	max-height: 36px;
+
+	font-weight: bolder;
+	color:rgb(80,80,80);
+	background-color: rgb(243, 162, 250);
+	text-align: center;
+}
+
+.mainNav-item a, .subNav-item a{
+	display: block;
+	width: 100%;
+}
+
+.subNav{
+	width: 100%;
+	position: relative;
+	display: none;
+}
+
+.subNav div{
+	margin-top: 5px;
+}
+
+.subNav-item{
+	position: relative;
+	float: left;
+	width: 100%;
+
+	cursor: pointer;
+
+	color:rgb(80,80,80);
+	background-color: rgb(243, 162, 250);
+	text-align: center;
+}
+
+.selected{
+	color: black;
+	background-color: rgb(252, 255, 156);
+}
+.mainNav-item:hover, .subNav-item:hover{
+	color: black;
+	background-color: rgb(252, 255, 156);
+}
+main{
+	margin-top: 72px;
+	margin-bottom: 144px;
+}
+.main-section{
+	margin: 25px 15px;
+}
+.big{
+	color: black;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.medium{
+	font-size: 0.9em;
+}
+.title{
+	color: black;
+	font-size: 1.6em;
+	font-weight: bold;
+	border-top: 2px solid black;
+	width: 100%;
+	padding-top: 10px;
+	margin-top: 30px;
+}
+
+.title-week{
+	color: black;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	width: 100%;
+	background-color: rgb(252, 255, 156);
+}
+
+.title-break{
+	color: black;
+	font-size: 4em;
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 20px;
+	margin-top: 100px;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	background-color: rgb(243, 162, 250);
+}
+
+.anchor{
+	display: block;
+  position: relative;
+  top: -72px;
+  visibility: hidden;
+}
+
+.week-date{
+	margin-top: 2px;
+	margin-bottom: 2px;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.code-description{
+	margin: 20px 0 5px;
+	font-size: 0.9em;
+}
+
+.back{
+	font-size: 0.6em;
+	float: right;
+	font-weight: light;
+}
+
+.special{
+	font-style: italic;
+}
+
+.due-date{
+	font-size: 1.3em;
+
+	background-color: rgb(255, 212, 255);
+	color: black;
+
+	margin-top: 10px;
+	padding: 2px;
+}
+
+.due-date em{
+	font-size: 0.9em;
+	padding: 0px;
+}
+
+.due-notice{
+	background-color: rgb(255, 212, 255);
+	color: black;
+}
+
+.assign-project{
+	color:#000;
+	font-style: italic;
+}
+
+.ref-link{
+	text-decoration: underline;
+}
+.ref-link:hover{
+	color: rgb(243, 162, 250);
+}
+.nav{
+	font-weight: bold;
+	font-size: 1.1em;	
+}
+.nav-link{
+	text-decoration: underline;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.nav-link:hover{
+	color: rgb(243, 162, 250);
+}
+.nav-link-separator{
+	font-size: 1.25em;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	display: block;
+	text-decoration: underline;
+}
+.assign-info{
+	margin: 5px 20px;
+}
+.top-spacer{
+	margin-top: 15px;
+}
+.tab-space{
+	margin-left:1.2em;
+}
+
+.zoom {
+	/*color: MediumVioletRed;*/
+	color: Orchid;
+}
+
+#audioInspiration, #videoInspiration {
+	display: none;
+}
+
+.clickExpandAudio, .clickExpandVideo {
+	background-color: #777;
+	color: white;
+}
+
+@media (max-width: 960px){
+	body{
+		width: 100%;
+	}
+
+	.mainNav{
+		width: 100%;
+	}
+}
+
+@media (max-width: 780px) {
+  main {
+    margin-top: 104px;
+  }
+
+	.mainNav-item{
+		overflow: hidden;
+		font-size: 0.8em;
+		width: 31%;
+	}
+}
+
+@media (max-width: 460px) {
+  main {
+    margin-top: 136px;
+  }
+
+	.anchor{
+		top:-136px;
+	}
+}

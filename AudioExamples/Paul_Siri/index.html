@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel= "stylesheet" type= "text/css" href= css/style.css>
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:900" rel="stylesheet">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Sound Story Siri</title>
+  </head>
+  
+  <body>
+  	<div class = "text">
+		<div id = "text1"> Paul meets Siri.</div>   
+		<div id = "text2"> Listen to their story.</div>
+	</div>
+
+	<!-- <audio id = "player" preload = "auto">
+		<source src = "audio/mixdown.wav" type = "audio/wav">
+	</audio>
+ -->
+<!-- 	<div class="button-holder" id="button">
+		<div class="button" id="playButton">play</div>
+		<div class="button" id="pauseButton">pause</div>
+		<div class="button" id="stopButton">restart</div>
+	</div> -->
+
+<div class="container" id="container">
+	<div class="progress" id="progress"></div>
+
+	<audio preload = "auto" id="audio" src="audio/mixdown.wav"></audio>
+	<button class="togglePlay" class="button" onClick="togglePlay()">Play/Pause</button>
+	<button class="button" id="stopButton" >Restart</button>
+</div>
+
+	<img id = "image" src="photos/siri.gif" alt="image not supported">
+
+	
+	<script type="text/javascript" src = "js/sound.js"></script>
+
+  </body>
+</html>
