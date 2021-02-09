@@ -40,6 +40,7 @@ a{
 
 .homework{
 	font-weight: bold;
+	font-style: italic;
 	background-color: rgb(80, 80, 80);
 	color: white;
 	padding: 0px 2px 0px 2px;
@@ -231,7 +232,7 @@ main{
 }
 .nav{
 	font-weight: bold;
-	font-size: 1.1em;	
+	font-size: 1.1em;
 }
 .nav-link{
 	text-decoration: underline;
