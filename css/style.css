@@ -303,3 +303,10 @@ main{
 		top:-136px;
 	}
 }
+
+/* Hide some things when printing */
+@media print {
+	.mainNav {
+		display: none;
+	}
+}
