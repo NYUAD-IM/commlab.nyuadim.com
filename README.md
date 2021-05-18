@@ -14,6 +14,10 @@ Host commlab
      User <user>
      ForwardAgent Yes
 ```
+You can authorize the ssh-agent for 8 hours using this command:
+```
+ssh-add -t 8h ~/.ssh/id_rsa
+```
 
 ## TODO
 - automatically push changes to website on GitHub commit
