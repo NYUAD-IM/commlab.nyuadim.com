@@ -14,6 +14,10 @@ Host commlab
      User <user>
      ForwardAgent Yes
 ```
+You can authorize the ssh-agent for 8 hours using this command:
+```
+ssh-add -t 8h ~/.ssh/id_rsa
+```
 
 In order to bypass the password input every time you SSH to the webserver, you can use `ssh-copy-id` to copy your public ssh key to the server. To check if you already have an SSH key: `ls ~/.ssh/` and see if there's a file called `id_rsa`. If there isn't create one by typing:
 ```
